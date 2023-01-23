@@ -16,12 +16,12 @@ function Links() {
           </a>
         </li>
         <li>
-          <a href="/shop" className="website-link" id="TOP-link">
-            <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
+          <a href="/" className="">
+            <FontAwesomeIcon icon="fa-solid fa-envelope" />
           </a>
         </li>
         <li>
-          <a href="/contact" className="">
+          <a href="/" className="website-link" id="TOP-link">
             <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
           </a>
         </li>
