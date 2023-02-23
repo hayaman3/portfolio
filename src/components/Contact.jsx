@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import '../assets/CSS/contact.css';
+// import location from '../assets/images/location.png';
 
 function Contact() {
   const form = useRef();
@@ -9,10 +11,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        'service_8wn3nnc',
-        'template_dh0pal8',
+        process.env.REACT_APP_EmailJS_Service,
+        process.env.REACT_APP_EmailJS_Template,
         form.current,
-        'YG_98rb0QwdZEF2UD'
+        process.env.REACT_APP_EmailJS_API_KEY
       )
       .then(
         (result) => {
@@ -26,7 +28,7 @@ function Contact() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} className="contact">
       <label htmlFor="user_name">Name</label>
       <input type="text" name="user_name" id="user_name" />
       <label htmlFor="user_email">Email</label>
