@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-
+/* 
 :root {
   --white: #F9FBFF;
   --dark: #013f66;
@@ -20,7 +20,6 @@ code {
   --graient: linear-gradient(#3da454, #45a45d)
 }
 
-/* css reset */
 *,
 *::before,
 *::after {
@@ -79,4 +78,4 @@ body {
   margin: 0;
   font-family: Poppins, sans-serif;
   min-height: 100vh;
-}
+} */
