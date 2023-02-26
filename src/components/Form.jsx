@@ -8,6 +8,14 @@ function Form() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const email = e.target[1].value;
+
+    const regEmail =
+      // eslint-disable-next-line no-useless-escape
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!(!email || regEmail.test(email) === false)) {
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -30,24 +38,24 @@ function Form() {
   return (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <div className="input-information">
-        <input type="text" name="user_name" id="user_name" />
+        <input type="text" name="user_name" id="user_name" required />
         <label htmlFor="user_name" className="label">
           Name
         </label>
       </div>
       <div className="input-information">
-        <input type="email" name="user_email" id="user_email" />
+        <input name="user_email" id="user_email" required />
         <label htmlFor="user_email" className="label">
           Email
         </label>
       </div>
       <div className="input-information">
-        <textarea name="message" id="message" />
+        <textarea name="message" id="message" required />
         <label htmlFor="message" className="label">
           Message
         </label>
       </div>
-      <input type="submit" value="Send" />
+      <input type="submit" value="submit" />
     </form>
   );
 }

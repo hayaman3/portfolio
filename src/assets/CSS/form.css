@@ -41,7 +41,7 @@ textarea {
   transition: .5s;
 }
 
-/* .contact-form .input-information input:focus~label,
+.contact-form .input-information input:focus~label,
 .contact-form .input-information input:valid~label,
 .contact-form .input-information textarea:focus~label,
 .contact-form .input-information textarea:valid~label {
@@ -49,13 +49,12 @@ textarea {
   left: 0;
   color: #fff;
   font-size: 12px;
-} */
+}
 
-.contact-form .input-information input:focus~.label,
-
+/* .contact-form .input-information input:focus~.label,
 .contact-form .input-information textarea:focus~.label {
   top: -20px;
   left: 0;
   color: #fff;
   font-size: 12px;
-}
+} */
