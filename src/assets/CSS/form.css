@@ -51,10 +51,44 @@ textarea {
   font-size: 12px;
 }
 
-/* .contact-form .input-information input:focus~.label,
-.contact-form .input-information textarea:focus~.label {
-  top: -20px;
-  left: 0;
-  color: #fff;
-  font-size: 12px;
-} */
+
+
+.submit-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: .8rem;
+  padding: 18px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submit-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit-button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.submit-button:hover span {
+  padding-right: 10px;
+}
+
+.submit-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

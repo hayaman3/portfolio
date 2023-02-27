@@ -13,7 +13,8 @@ function Form() {
     const regEmail =
       // eslint-disable-next-line no-useless-escape
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    if (!(!email || regEmail.test(email) === false)) {
+    if (!email || regEmail.test(email) === false) {
+      console.log('error');
       return;
     }
 
@@ -55,7 +56,9 @@ function Form() {
           Message
         </label>
       </div>
-      <input type="submit" value="submit" />
+      <button type="submit" value="Submit" className="submit-button">
+        <span>Send Message</span>
+      </button>
     </form>
   );
 }
