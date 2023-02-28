@@ -51,7 +51,7 @@ function Form() {
         </label>
       </div>
       <div className="input-information">
-        <textarea name="message" id="message" required />
+        <textarea name="message" id="message" required rows="4" />
         <label htmlFor="message" className="label">
           Message
         </label>

@@ -8,10 +8,10 @@ import location from './assets/images/location.png';
 function App() {
   return (
     <div className="App">
-      {/* <div>HERE</div>
+      <div>HERE</div>
       <Links />
       <GithubActivity />
-      <img src={location} alt="Logo" />; */}
+      {/* <img src={location} alt="Logo" />; */}
       <Contact />
     </div>
   );

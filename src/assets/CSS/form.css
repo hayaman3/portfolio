@@ -1,17 +1,20 @@
 .contact-form {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
-  width: 400px;
+  left: 50%; */
+  /* margin: 20px auto; */
+  /* transform: translate(-50%, -55%); */
+  /* box-shadow: 0 15px 25px rgba(0, 0, 0, .6); */
+  width: 380px;
   padding: 40px;
-  margin: 20px auto;
-  transform: translate(-50%, -55%);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-  background: rgba(0, 0, 0, .9);
-
+  border: 1px solid rgb(0, 0, 0);
+  background: rgba(255, 255, 255, .1);
   border-radius: 10px;
+  /* margin-left: 50%; */
+
 }
+
 
 .contact-form .input-information {
   position: relative;
@@ -20,25 +23,27 @@
 .contact-form .input-information input,
 textarea {
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 16px;
-  color: #fff;
+  color: #000000;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #161616;
   outline: none;
   background: transparent;
 }
 
 .contact-form .input-information label {
+  font-family: 'Oswald';
   position: absolute;
   top: 0;
   left: 0;
   padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
+  font-size: 20px;
+  color: #161616;
   pointer-events: none;
   transition: .5s;
+  font-weight: bold;
 }
 
 .contact-form .input-information input:focus~label,
@@ -47,16 +52,17 @@ textarea {
 .contact-form .input-information textarea:valid~label {
   top: -20px;
   left: 0;
-  color: #fff;
-  font-size: 12px;
+  opacity: .9;
+  font-size: 14px;
+  font-weight: 100
 }
 
-
-
 .submit-button {
-  display: inline-block;
+  margin-top: 100px;
+  margin-left: 220px;
+
   border-radius: 4px;
-  background-color: #3d405b;
+  background-color: #141414;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -65,7 +71,7 @@ textarea {
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+
 }
 
 .submit-button span {
