@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Links() {
   return (
-    <nav className="nav-links">
+    <nav className="links">
       <ul>
         <li>
           <a href="/" className="website-link" id="github-link">

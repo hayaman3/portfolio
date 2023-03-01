@@ -5,14 +5,13 @@
   /* margin: 20px auto; */
   /* transform: translate(-50%, -55%); */
   /* box-shadow: 0 15px 25px rgba(0, 0, 0, .6); */
-  width: 380px;
+  /* width: 350px; */
   padding: 40px;
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, .8);
   border-radius: 10px;
-  /* margin-left: 50%; */
-
+  margin-top: -40px;
 }
 
 
@@ -59,8 +58,7 @@ textarea {
 
 .submit-button {
   margin-top: 100px;
-  margin-left: 220px;
-
+  margin-left: 180px;
   border-radius: 4px;
   background-color: #141414;
   border: none;
@@ -71,7 +69,6 @@ textarea {
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
-
 }
 
 .submit-button span {
@@ -98,3 +95,24 @@ textarea {
   opacity: 1;
   right: 0;
 }
+
+/* .layout {
+  width: 1920px;
+  height: 1080px;
+
+  display: grid;
+  grid:
+    ". . . form form ." 0.5fr
+    ". . . form form ." 0.5fr
+    ". icon . form form ." 0.5fr
+    ". . . form form ." 0.5fr
+    "text text . form form ." 0.5fr
+    ". . . form form ." 0.5fr
+    / 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  align-content: center;
+}
+
+.form { grid-area: form; }
+.icon { grid-area: icon; }
+.text { grid-area: text; } */

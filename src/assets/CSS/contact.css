@@ -1,24 +1,32 @@
-/* .contact {} */
-
 .contact {
-  width: 1920px;
-  height: 1080px;
-
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
   display: grid;
   grid:
-    ". . . form form ." 0.5fr ". . . form form ." 0.5fr ". icon . form form ." 0.5fr ". . . form form ." 0.5fr "text text . . . ." 1fr ". . . . . ." 1fr / 1fr 1fr 1fr 0.5fr 0.5fr 0.75fr;
-
-  align-content: center;
-
+    ". . . . form form ." 1fr ". . icon . form form ." 1fr ". . . . form form ." 1fr ". text text . form form ." 1fr ". . . . form form ." 1fr ". city . . . . ." 1fr ". email . . links . ." 1fr ". . . . . . ." 0.5fr / 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   background-image: url(../images/location.png);
+  background-size: 100% 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: 100% 100%; */
+  object-fit: cover;
+  background-position: 0 50px;
+  /* background-size: contain; */
+
+}
+
+.contact-main {
+
+  /* background-image: url(../images/location.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-position: 50% 50%; */
   /* min-height: 500px; */
   /* height: 100vh; */
   /* height: auto; */
-  width: 100vw;
-  aspect-ratio: 3/1;
+  /* width: 100vw;
+  aspect-ratio: 3/1;  */
 }
 
 .contact-form {
@@ -27,8 +35,26 @@
 
 .icon {
   grid-area: icon;
+  align-self: center;
+  color: white;
+  font-size: 1.7rem;
 }
+
 
 .text {
   grid-area: text;
+  font-size: 3rem;
+  color: #FEFEFE;
+}
+
+.links {
+  grid-area: links;
+  color: #5C5C5A;
+}
+
+.links>ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.7rem;
+  justify-content: space-evenly
 }
