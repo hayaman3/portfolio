@@ -1,7 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
 
@@ -63,7 +62,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   margin: 0;
   padding: 0;
@@ -113,7 +111,6 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 0 2rem;
 }
