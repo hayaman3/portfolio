@@ -5,7 +5,7 @@ import './header.css';
 
 function Header() {
   // toggle menu
-  const [toggle, showMenu] = useState(true);
+  const [toggle, showMenu] = useState(false);
 
   return (
     <header className="header">
@@ -16,47 +16,45 @@ function Header() {
         <div className={toggle ? 'nav-menu show-menu' : 'nav-menu'}>
           <ul className="nav-list grid">
             <li className="nav-item">
-              <a href="#home">
+              <a href="#home" className="nav-link">
                 <i className="uil uil-estate nav-icon" />
                 Home
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#about">
-                <i className="uil uil-file nav-icon" />
+              <a href="#about" className="nav-link">
+                <i className="uil uil-user nav-icon" />
                 About
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#skills">
+              <a href="#skills" className="nav-link">
                 <i className="uil uil-file-alt nav-icon" />
                 Skills
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#portfolio">
+              <a href="#portfolio" className="nav-link">
                 <i className="uil uil-scenery nav-icon" />
                 Portfolio
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#contact">
+              <a href="#contact" className="nav-link">
                 <i className="uil uil-message nav-icon" />
                 Contact
               </a>
             </li>
           </ul>
-
           <i
             className="uil uil-times nav-close"
             onClick={() => showMenu(!toggle)}
           />
         </div>
-
         <div className="nav-toggle" onClick={() => showMenu(!toggle)}>
           <i className="uil uil-apps" />
         </div>
