@@ -1,7 +1,7 @@
 import React from 'react';
 import Social from './Social';
 import Data from './Data';
-
+import ScrollDown from './ScrollDown';
 import './home.css';
 
 function Home() {
@@ -10,9 +10,12 @@ function Home() {
       <div className="home-container container grid">
         <div className="home-content grid">
           <Social />
+
           <div className="home-image" />
+
           <Data />
         </div>
+        <ScrollDown />
       </div>
     </section>
   );
