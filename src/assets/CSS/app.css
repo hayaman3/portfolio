@@ -137,10 +137,10 @@ img {
   margin-right: auto;
 }
 
-/* .grid {
+.grid {
   display: grid;
   gap: 1.5rem;
-} */
+}
 
 /*=============== BUTTONS ===============*/
 .button {
@@ -160,7 +160,7 @@ img {
   margin-left: var(--mb-0-5);
 }
 
-.button--flex {
+.button-flex {
   display: inline-flex;
   align-items: center;
 }

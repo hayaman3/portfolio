@@ -47,7 +47,9 @@
 /* Active Link */
 .active-link,
 .nav-link:hover {
-  color: var(--title-color-dark)
+  color: var(--title-color-dark);
+  transform: scale(1.1);
+
 }
 
 /* Breakpoints */
@@ -107,7 +109,7 @@
   }
 
   .nav-close:hover {
-    color: var(--title-color-dark)
+    color: var(--title-color-dark);
   }
 
   .nav-toggle {

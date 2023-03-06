@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './components/header/Header';
+import Home from './components/home/Home';
+
 import './assets/CSS/app.css';
 
 function App() {
@@ -9,6 +11,9 @@ function App() {
       {/* <GithubActivity /> */}
       {/* <Contact /> */}
       <Header />
+      <main className="main">
+        <Home />
+      </main>
     </>
   );
 }
