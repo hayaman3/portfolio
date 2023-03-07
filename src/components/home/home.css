@@ -50,7 +50,7 @@
 }
 
 .home-image {
-  background-color: grey;
+  background: url(../../assets/images/kevin.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,6 +59,7 @@
   justify-self: center;
   width: 300px;
   height: 300px;
+  filter: grayscale(50%);
   animation: profile-animate 8s ease-in-out infinite 1s;
 }
 

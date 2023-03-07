@@ -1,18 +1,16 @@
 import React from 'react';
+import './assets/CSS/app.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
-
-import './assets/CSS/app.css';
+import About from './components/about/About';
 
 function App() {
   return (
     <>
-      {/* <div>HERE</div> */}
-      {/* <GithubActivity /> */}
-      {/* <Contact /> */}
       <Header />
       <main className="main">
         <Home />
+        <About />
       </main>
     </>
   );
