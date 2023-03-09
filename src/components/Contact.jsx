@@ -2,7 +2,6 @@ import React from 'react';
 import '../assets/CSS/contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Form from './Form';
-import Links from './Links';
 
 // import location from '../assets/images/location.png';
 
@@ -16,7 +15,6 @@ function Contact() {
       </span>
       <h2 className="text">Contact Me</h2>
       <Form />
-      <Links />
     </div>
   );
 }

@@ -17,7 +17,7 @@
   --body-font: "Poppins", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
-  --big-font-size: 3.5rem;
+  --big-font-size: 2.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -51,7 +51,7 @@
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
-    --big-font-size: 2.75rem;
+    --big-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -203,7 +203,7 @@ img {
 /* For small devices */
 @media screen and (max-width: 350px) {
   :root {
-    --big-font-size: 2.25rem;
+    --big-font-size: 2rem;
   }
 
   .container {

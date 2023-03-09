@@ -5,7 +5,7 @@ function Data() {
   return (
     <div className="home-data">
       <h1 className="home-title">
-        Kevin Haya
+        Kevin Larry Haya
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
