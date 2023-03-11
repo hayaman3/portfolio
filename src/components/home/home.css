@@ -44,10 +44,6 @@
   margin-bottom: var(--mb-1);
 }
 
-.home-description {
-  max-width: 400px;
-  margin-bottom: var(--mb-3);
-}
 
 .home-image {
   background: url(../../assets/images/kevin.png);
@@ -125,10 +121,6 @@
     margin-bottom: var(--mb-1);
   }
 
-  .home-description {
-    max-width: initial;
-    margin-bottom: var(--mb-2-5);
-  }
 
   .home-image {
     width: 250px;

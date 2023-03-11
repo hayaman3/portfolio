@@ -61,9 +61,6 @@ function Data() {
         Front end Developer / Mechanical Engineer
       </h3>
 
-      <p className="home-description">
-        I love creating and figuring out how things work
-      </p>
       <a href="#contact" className="button button-flex">
         Say Hello
         <svg

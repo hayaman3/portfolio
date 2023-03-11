@@ -19,6 +19,9 @@ function About() {
             Self-taught front-end developer. Naturally curious, and
             perpetually working on improving myself.
           </p>
+          {/* <p className="home-description">
+        I love creating and figuring out how things work
+      </p> */}
           <a download="" href="{CV}" className="button button-flex">
             Download CV
             <svg
