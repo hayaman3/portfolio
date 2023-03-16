@@ -4,7 +4,7 @@ import './qualification.css';
 function Qualification() {
   return (
     <section className="qualification section">
-      <h2 className="title">Qualification</h2>
+      <h2 className="section-title">Qualification</h2>
       <span className="section-subtitle">My Journey</span>
 
       <div className="qualification-container container">
@@ -13,6 +13,7 @@ function Qualification() {
             <i className="uil uil-graduation-cap qualification-icon" />
             Education
           </div>
+
           <div className="qualification-button button-flex">
             <i className="uil uil-briefcase-alt qualification-icon" />
             Experience
@@ -20,8 +21,8 @@ function Qualification() {
         </div>
 
         <div className="qualification-sections">
-          <div className="qualification-content qualification-content-active">
-            <div className="quaification-data">
+          <div className="qualification-content">
+            <div className="qualification-data">
               <div>
                 <h3 className="qualification-title">Title</h3>
                 <span className="qualification-subtitle">
@@ -29,7 +30,7 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
 
@@ -39,9 +40,8 @@ function Qualification() {
               </div>
             </div>
 
-            <div className="quaification-data">
+            <div className="qualification-data">
               <div />
-
               <div>
                 <span className="qualification-rounder" />
                 <span className="qualification-line" />
@@ -53,12 +53,12 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
             </div>
 
-            <div className="quaification-data">
+            <div className="qualification-data">
               <div>
                 <h3 className="qualification-title">Title</h3>
                 <span className="qualification-subtitle">
@@ -66,7 +66,7 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
 
@@ -76,9 +76,8 @@ function Qualification() {
               </div>
             </div>
 
-            <div className="quaification-data">
+            <div className="qualification-data">
               <div />
-
               <div>
                 <span className="qualification-rounder" />
                 <span className="qualification-line" />
@@ -90,13 +89,14 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
             </div>
           </div>
+
           <div className="qualification-content">
-            <div className="quaification-data">
+            <div className="qualification-data">
               <div>
                 <h3 className="qualification-title">Title</h3>
                 <span className="qualification-subtitle">
@@ -104,7 +104,7 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
 
@@ -114,9 +114,8 @@ function Qualification() {
               </div>
             </div>
 
-            <div className="quaification-data">
+            <div className="qualification-data">
               <div />
-
               <div>
                 <span className="qualification-rounder" />
                 <span className="qualification-line" />
@@ -128,12 +127,12 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
             </div>
 
-            <div className="quaification-data">
+            <div className="qualification-data">
               <div>
                 <h3 className="qualification-title">Title</h3>
                 <span className="qualification-subtitle">
@@ -141,7 +140,7 @@ function Qualification() {
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  Time
+                  YEAR-YEAR
                 </div>
               </div>
 
