@@ -1,7 +1,10 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState } from 'react';
 import './qualification.css';
 
 function Qualification() {
+  const [toggleQualification, setToggle] = useState(true);
   return (
     <section className="qualification section">
       <h2 className="section-title">Qualification</h2>
@@ -9,28 +12,50 @@ function Qualification() {
 
       <div className="qualification-container container">
         <div className="qualification-tabs">
-          <div className="qualification-button button-flex qualification-active">
+          <div
+            className={
+              toggleQualification
+                ? 'qualification-button button-flex qualification-active'
+                : 'qualification-button button-flex'
+            }
+            onClick={() => setToggle(true)}
+          >
             <i className="uil uil-graduation-cap qualification-icon" />
             Education
           </div>
 
-          <div className="qualification-button button-flex">
+          <div
+            className={
+              !toggleQualification
+                ? 'qualification-button button-flex qualification-active'
+                : 'qualification-button button-flex'
+            }
+            onClick={() => setToggle(false)}
+          >
             <i className="uil uil-briefcase-alt qualification-icon" />
             Experience
           </div>
         </div>
 
-        <div className="qualification-sections">
-          <div className="qualification-content">
+        <div className="qualification-sections ">
+          <div
+            className={
+              toggleQualification
+                ? 'qualification-content qualification-content-active'
+                : 'qualification-content'
+            }
+          >
             <div className="qualification-data">
               <div>
-                <h3 className="qualification-title">Title</h3>
+                <h3 className="qualification-title">
+                  Web Development
+                </h3>
                 <span className="qualification-subtitle">
-                  Subtitle
+                  The Odin Project
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
-                  YEAR-YEAR
+                  2022-2023
                 </div>
               </div>
 
@@ -47,9 +72,11 @@ function Qualification() {
                 <span className="qualification-line" />
               </div>
               <div>
-                <h3 className="qualification-title">Title</h3>
+                <h3 className="qualification-title">
+                  Introduction to Programming Using Python
+                </h3>
                 <span className="qualification-subtitle">
-                  Subtitle
+                  TOP ECE Review Center
                 </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt" />
@@ -95,7 +122,13 @@ function Qualification() {
             </div>
           </div>
 
-          <div className="qualification-content">
+          <div
+            className={
+              !toggleQualification
+                ? 'qualification-content qualification-content-active'
+                : 'qualification-content'
+            }
+          >
             <div className="qualification-data">
               <div>
                 <h3 className="qualification-title">Title</h3>
