@@ -135,12 +135,12 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  .comtact-container {
+  .contact-container {
     grid-template-columns: 1fr;
     row-gap: 3rem;
   }
 
-  .comtact-info {
+  .contact-info {
     justify-content: center;
   }
 
@@ -150,7 +150,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .comtact-info {
+  .contact-info {
     grid-template-columns: 1fr;
   }
 

@@ -1,9 +1,45 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React from 'react';
+import React, { useRef } from 'react';
+
+import emailjs from '@emailjs/browser';
+
 import './contact.css';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const email = e.target[1].value;
+
+    const regEmail =
+      // eslint-disable-next-line no-useless-escape
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!email || regEmail.test(email) === false) {
+      console.log('error');
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EmailJS_Service,
+        process.env.REACT_APP_EmailJS_Template,
+        form.current,
+        process.env.REACT_APP_EmailJS_API_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('message sent');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section-title">Get in touch</h2>
@@ -55,7 +91,11 @@ function Contact() {
 
         <div className="contact-content contact-form-area">
           <h3 className="contact-title">Write me your project</h3>
-          <form className="contact-form">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="contact-form"
+          >
             <div className="contact-form-div">
               <label htmlFor="name" className="contact-form-tag">
                 Name
