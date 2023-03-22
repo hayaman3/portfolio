@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import './header.css';
 
@@ -50,14 +48,17 @@ function Header() {
               </a>
             </li>
           </ul>
-          <i
-            className="uil uil-times nav-close"
-            onClick={() => showMenu(!toggle)}
-          />
+          <button onClick={() => showMenu(!toggle)} type="button">
+            <i className="uil uil-times nav-close" />
+          </button>
         </div>
-        <div className="nav-toggle" onClick={() => showMenu(!toggle)}>
+        <button
+          className="nav-toggle"
+          onClick={() => showMenu(!toggle)}
+          type="button"
+        >
           <i className="uil uil-apps" />
-        </div>
+        </button>
       </nav>
     </header>
   );

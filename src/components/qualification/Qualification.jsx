@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import './qualification.css';
 
@@ -12,7 +10,8 @@ function Qualification() {
 
       <div className="qualification-container container">
         <div className="qualification-tabs">
-          <div
+          <button
+            type="button"
             className={
               toggleQualification
                 ? 'qualification-button button-flex qualification-active'
@@ -22,9 +21,10 @@ function Qualification() {
           >
             <i className="uil uil-graduation-cap qualification-icon" />
             Education
-          </div>
+          </button>
 
-          <div
+          <button
+            type="button"
             className={
               !toggleQualification
                 ? 'qualification-button button-flex qualification-active'
@@ -34,7 +34,7 @@ function Qualification() {
           >
             <i className="uil uil-briefcase-alt qualification-icon" />
             Experience
-          </div>
+          </button>
         </div>
 
         <div className="qualification-sections ">
