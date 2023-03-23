@@ -5,8 +5,6 @@
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-
-
 }
 
 .nav {
@@ -41,7 +39,9 @@
 .nav-icon,
 .nav-close,
 .nav-toggle {
-  display: none
+  display: none;
+  background-color: var(--body-color);
+
 }
 
 /* Active Link */
@@ -49,7 +49,6 @@
 .nav-link:hover {
   color: var(--title-color-dark);
   transform: scale(1.1);
-
 }
 
 /* Breakpoints */

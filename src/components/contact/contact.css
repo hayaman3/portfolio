@@ -1,8 +1,14 @@
+.contact {
+  min-height: auto;
+  /*This is what we added!*/
+}
+
 .contact-container {
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
   column-gap: 6rem;
-  padding-bottom: 3rem
+  padding-bottom: 3rem;
+  height: max-content;
 }
 
 .contact-title {

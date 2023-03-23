@@ -1,4 +1,5 @@
 .qualification-container {
+  margin: 0 auto;
   max-width: 768px;
 }
 
@@ -15,7 +16,7 @@
   margin: 0 var(--mb-1);
   cursor: pointer;
   transition: .3s;
-
+  background-color: var(--body-color);
 }
 
 .qualification-button:hover {

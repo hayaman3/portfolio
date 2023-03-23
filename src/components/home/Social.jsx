@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 function Social() {
@@ -12,11 +11,21 @@ function Social() {
       >
         <i className="uil uil-github" />
       </a>
-      <a href="" className="home-social-icon" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/kevin-larry-haya-458958198/"
+        className="home-social-icon"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i className="uil uil-linkedin" />
       </a>
 
-      <a href="" className="home-social-icon" target="_blank">
+      <a
+        href="https://www.facebook.com/kevinlarry.haya/"
+        className="home-social-icon"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i className="uil uil-facebook" />
       </a>
     </div>

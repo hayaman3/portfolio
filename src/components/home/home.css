@@ -1,3 +1,9 @@
+.home {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .home-container {
   row-gap: 7rem;
 }

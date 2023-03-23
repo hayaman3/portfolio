@@ -23,7 +23,7 @@ function About() {
         I love creating and figuring out how things work
       </p> */}
           <a download="" href="{CV}" className="button button-flex">
-            Download CV
+            Download CV&nbsp;
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="button__icon"
