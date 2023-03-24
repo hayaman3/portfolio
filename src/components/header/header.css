@@ -24,6 +24,7 @@
 .nav-list {
   display: flex;
   column-gap: 2rem;
+  margin-top: 1.25rem;
 }
 
 .nav-link {
@@ -49,6 +50,10 @@
 .nav-link:hover {
   color: var(--title-color-dark);
   transform: scale(1.1);
+}
+
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Breakpoints */
@@ -81,11 +86,10 @@
   }
 
   .nav-list {
+    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    /* edited */
-    justify-items: center;
   }
 
   .nav-icon,
