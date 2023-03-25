@@ -112,7 +112,7 @@
 }
 
 .contact-form-area {
-  height: 11rem;
+  min-height: 11rem;
 }
 
 .contact-form-area textarea {
