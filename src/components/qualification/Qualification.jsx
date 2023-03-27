@@ -51,11 +51,73 @@ function Qualification() {
                   Web Development
                 </h3>
                 <span className="qualification-subtitle">
-                  The Odin Project
+                  <a
+                    href="https://github.com/hayaman3"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    The Odin Project
+                  </a>
                 </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
+                <div className="qualification-data-icon">
+                  <i className="uil uil-data-icon-alt" />
                   2022-2023
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification-rounder" />
+                <span className="qualification-line" />
+              </div>
+            </div>
+
+            <div className="qualification-data">
+              <div />
+              <div>
+                <span className="qualification-rounder" />
+                <span className="qualification-line" />
+              </div>
+
+              <div>
+                <h3 className="qualification-title">
+                  Web Development
+                </h3>
+                <span className="qualification-subtitle">
+                  <a
+                    href="https://www.udemy.com/course/web-development-html5-css3-php-oop-and-mysql-database/"
+                    className="qualification-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Course link
+                  </a>
+                </span>
+                <div className="qualification-data-icon">
+                  <i className="uil uil-book-alt" />
+                  Udemy
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification-data">
+              <div>
+                <h3 className="qualification-title">
+                  Introduction to Programming Using Python
+                </h3>
+
+                <span className="qualification-subtitle">
+                  <a
+                    href="https://www.facebook.com/topreviewcenter"
+                    className="qualification-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    TOP ECE Review Center
+                  </a>
+                </span>
+                <div className="qualification-data-icon">
+                  <i className="uil uil-map-pin-alt" />
+                  Baguio City
                 </div>
               </div>
 
@@ -73,27 +135,43 @@ function Qualification() {
               </div>
               <div>
                 <h3 className="qualification-title">
-                  Introduction to Programming Using Python
+                  Java Programming Language
                 </h3>
                 <span className="qualification-subtitle">
-                  TOP ECE Review Center
+                  <a
+                    href="https://informatics.edu.ph/"
+                    className="qualification-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Informatics
+                  </a>
                 </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
-                  YEAR-YEAR
+                <div className="qualification-data-icon">
+                  <i className="uil uil-map-pin-alt" />
+                  Baguio City
                 </div>
               </div>
             </div>
 
             <div className="qualification-data">
               <div>
-                <h3 className="qualification-title">Title</h3>
+                <h3 className="qualification-title">
+                  C Programming Language
+                </h3>
                 <span className="qualification-subtitle">
-                  Subtitle
+                  <a
+                    href="https://informatics.edu.ph/"
+                    className="qualification-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Informatics
+                  </a>
                 </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
-                  YEAR-YEAR
+                <div className="qualification-data-icon">
+                  <i className="uil uil-map-pin-alt" />
+                  Baguio City
                 </div>
               </div>
 
@@ -102,22 +180,31 @@ function Qualification() {
                 <span className="qualification-line" />
               </div>
             </div>
+          </div>
 
-            <div className="qualification-data">
-              <div />
-              <div>
-                <span className="qualification-rounder" />
-                <span className="qualification-line" />
-              </div>
-              <div>
-                <h3 className="qualification-title">Title</h3>
-                <span className="qualification-subtitle">
-                  Subtitle
-                </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
-                  YEAR-YEAR
-                </div>
+          <div className="qualification-data">
+            <div />
+            <div>
+              <span className="qualification-rounder" />
+              <span className="qualification-line" />
+            </div>
+            <div>
+              <h3 className="qualification-title">
+                Mechanical Engineering
+              </h3>
+              <span className="qualification-subtitle">
+                <a
+                  href="https://www.slu.edu.ph/"
+                  className="qualification-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Saint Louis University
+                </a>
+              </span>
+              <div className="qualification-data-icon">
+                <i className="uil uil-map-pin-alt" />
+                Baguio City
               </div>
             </div>
           </div>
@@ -135,8 +222,8 @@ function Qualification() {
                 <span className="qualification-subtitle">
                   Subtitle
                 </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
+                <div className="qualification-data-icon">
+                  <i className="uil uil-data-icon-alt" />
                   YEAR-YEAR
                 </div>
               </div>
@@ -158,8 +245,8 @@ function Qualification() {
                 <span className="qualification-subtitle">
                   Subtitle
                 </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
+                <div className="qualification-data-icon">
+                  <i className="uil uil-data-icon-alt" />
                   YEAR-YEAR
                 </div>
               </div>
@@ -171,8 +258,8 @@ function Qualification() {
                 <span className="qualification-subtitle">
                   Subtitle
                 </span>
-                <div className="qualification-calendar">
-                  <i className="uil uil-calendar-alt" />
+                <div className="qualification-data-icon">
+                  <i className="uil uil-data-icon-alt" />
                   YEAR-YEAR
                 </div>
               </div>
