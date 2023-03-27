@@ -1,0 +1,22 @@
+.activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.github-link::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  border-bottom: 1px solid var(--title-color);
+}
+
+.github-link:active,
+.github-link:visited,
+.github-link:link {
+  color: inherit;
+}
+
+.activity-image {
+  filter: grayscale(85%);
+}

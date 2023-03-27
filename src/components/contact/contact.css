@@ -1,6 +1,5 @@
 .contact {
   min-height: auto;
-  /*This is what we added!*/
 }
 
 .contact-container {
@@ -82,7 +81,6 @@
 .contact-form-div {
   width: 100%;
   position: relative;
-  /* margin-bottom: var(--mb-2); */
   height: 4rem;
 }
 

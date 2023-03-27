@@ -68,14 +68,12 @@
 
 .qualification-link {
   color: var(--title-color);
-
 }
 
 .qualification-link::after {
   content: "";
   display: block;
   width: 1.5rem;
-  padding-top: 3px;
   border-bottom: 1px solid var(--title-color);
 }
 
@@ -83,6 +81,10 @@
 .qualification-link:visited,
 .qualification-link:link {
   color: inherit;
+}
+
+.qualification-link:hover {
+  color: var(--title-color-dark);
 }
 
 .qualification-data-icon {
