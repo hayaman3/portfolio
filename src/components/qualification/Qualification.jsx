@@ -52,7 +52,8 @@ function Qualification() {
                 </h3>
                 <span className="qualification-subtitle">
                   <a
-                    href="https://github.com/hayaman3"
+                    href="https://www.theodinproject.com/"
+                    className="qualification-link"
                     target="_blank"
                     rel="noreferrer"
                   >

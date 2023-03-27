@@ -68,8 +68,22 @@
 
 .qualification-link {
   color: var(--title-color);
+
 }
 
+.qualification-link::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  padding-top: 3px;
+  border-bottom: 1px solid var(--title-color);
+}
+
+.qualification-link:active,
+.qualification-link:visited,
+.qualification-link:link {
+  color: inherit;
+}
 
 .qualification-data-icon {
   font-size: var(--small-font-size);
@@ -90,7 +104,6 @@
   background-color: var(--text-color);
   transform: translate(6px, -7px);
 }
-
 
 /*=============== BREAKPOINTS ===============*/
 

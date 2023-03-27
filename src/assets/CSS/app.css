@@ -99,12 +99,6 @@ a {
   text-decoration: none;
 }
 
-a:active,
-a:visited,
-a:link {
-  color: inherit;
-}
-
 button {
   cursor: pointer;
   border: none;
