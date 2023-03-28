@@ -4,12 +4,6 @@
   align-items: center;
 }
 
-.github-link::after {
-  content: "";
-  display: block;
-  width: 1.5rem;
-  border-bottom: 1px solid var(--title-color);
-}
 
 .github-link:active,
 .github-link:visited,
@@ -17,8 +11,21 @@
   color: inherit;
 }
 
+.github-link:hover {
+  color: var(--title-color-dark);
+}
+
+.github-link::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  border-bottom: 1px solid var(--title-color);
+}
+
 .activity-image {
   filter: grayscale(85%);
   padding: 1rem;
   background-color: var(--container-color);
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, .1);
 }
