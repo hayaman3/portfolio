@@ -19,4 +19,6 @@
 
 .activity-image {
   filter: grayscale(85%);
+  padding: 1rem;
+  background-color: var(--container-color);
 }
