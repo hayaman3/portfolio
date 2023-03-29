@@ -16,7 +16,7 @@ function Qualification() {
                 href="https://www.theodinproject.com/"
                 className="qualification-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 The Odin Project
               </a>
@@ -47,7 +47,7 @@ function Qualification() {
                 href="https://www.udemy.com/course/web-development-html5-css3-php-oop-and-mysql-database/"
                 className="qualification-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Course link
               </a>
@@ -69,7 +69,7 @@ function Qualification() {
                 href="https://www.facebook.com/topreviewcenter"
                 className="qualification-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 TOP ECE Review Center
               </a>
@@ -101,7 +101,7 @@ function Qualification() {
                 href="https://informatics.edu.ph/"
                 className="qualification-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Informatics
               </a>
@@ -123,7 +123,7 @@ function Qualification() {
                 href="https://informatics.edu.ph/"
                 className="qualification-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Informatics
               </a>
@@ -154,7 +154,7 @@ function Qualification() {
                 href="https://www.slu.edu.ph/"
                 className="qualification-link"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Saint Louis University
               </a>

@@ -7,7 +7,7 @@ function Social() {
         href="https://github.com/hayaman3"
         className="home-social-icon"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <i className="uil uil-github" />
       </a>
@@ -15,7 +15,7 @@ function Social() {
         href="https://www.linkedin.com/in/kevin-larry-haya-458958198/"
         className="home-social-icon"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <i className="uil uil-linkedin" />
       </a>
@@ -24,7 +24,7 @@ function Social() {
         href="https://www.facebook.com/kevinlarry.haya/"
         className="home-social-icon"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <i className="uil uil-facebook" />
       </a>

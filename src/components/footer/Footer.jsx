@@ -28,7 +28,7 @@ function Footer() {
             href="https://github.com/hayaman3"
             className="footer-social-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <i className="bx bxl-github" />
           </a>
@@ -36,7 +36,7 @@ function Footer() {
             href="https://www.linkedin.com/in/kevin-larry-haya-458958198/"
             className="footer-social-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <i className="bx bxl-linkedin" />
           </a>
@@ -45,7 +45,7 @@ function Footer() {
             href="https://www.facebook.com/kevinlarry.haya/"
             className="footer-social-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <i className="bx bxl-facebook" />
           </a>
