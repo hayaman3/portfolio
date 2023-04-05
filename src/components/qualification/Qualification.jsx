@@ -1,6 +1,21 @@
 import React from 'react';
 import './qualification.css';
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(
+  '.qualification-data hidden'
+);
+hiddenElements.forEach((el) => observer.observe(el));
+
 function Qualification() {
   return (
     <section className="qualification section">
@@ -8,7 +23,7 @@ function Qualification() {
       <span className="section-subtitle">My Journey</span>
 
       <div className="qualification-container container">
-        <div className="qualification-data">
+        <div className="qualification-data hidden">
           <div>
             <h3 className="qualification-title">Web Development</h3>
             <span className="qualification-subtitle">
@@ -33,7 +48,7 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data">
+        <div className="qualification-data hidden">
           <div />
           <div>
             <span className="qualification-rounder" />
@@ -59,7 +74,7 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data">
+        <div className="qualification-data hidden">
           <div>
             <h3 className="qualification-title">
               Introduction to Python
@@ -86,7 +101,7 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data">
+        <div className="qualification-data hidden">
           <div />
           <div>
             <span className="qualification-rounder" />
@@ -113,7 +128,7 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data">
+        <div className="qualification-data hidden">
           <div>
             <h3 className="qualification-title">
               C Programming Language
@@ -139,7 +154,8 @@ function Qualification() {
             <span className="qualification-line" />
           </div>
         </div>
-        <div className="qualification-data">
+
+        <div className="qualification-data hidden">
           <div />
           <div>
             <span className="qualification-rounder" />

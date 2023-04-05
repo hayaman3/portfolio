@@ -1,5 +1,7 @@
 .portfolio-image-short {
-  height: 10rem;
-  width: 10rem;
+  height: 12rem;
+  width: 12rem;
   border-radius: 1rem;
+  filter: grayscale(60%);
+
 }

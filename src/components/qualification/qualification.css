@@ -62,6 +62,34 @@
   transform: translate(6px, -7px);
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* 
+.qualification-data:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.qualification-data:nth-child(3) {
+  transition-delay: 400;
+}
+
+.qualification-data:nth-child(4) {
+  transition-delay: 600;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+} */
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 350px) {
