@@ -71,7 +71,7 @@
   opacity: 1;
 }
 
-/* 
+
 .qualification-data:nth-child(2) {
   transition-delay: 200ms;
 }
@@ -88,7 +88,7 @@
   .hidden {
     transition: none;
   }
-} */
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */

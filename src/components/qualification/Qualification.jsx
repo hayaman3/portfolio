@@ -1,29 +1,49 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './qualification.css';
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  });
-});
-
-const hiddenElements = document.querySelectorAll(
-  '.qualification-data hidden'
-);
-hiddenElements.forEach((el) => observer.observe(el));
-
 function Qualification() {
+  const visibilityRef = useRef(null);
+  const [isVisible, setVisible] = useState(false);
+
+  const animationCallback = (entries) => {
+    const [entry] = entries;
+    setVisible(entry.isIntersecting);
+  };
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5,
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      animationCallback,
+      options
+    );
+    if (visibilityRef.current)
+      observer.observe(visibilityRef.current);
+
+    return () => {
+      if (visibilityRef.current)
+        observer.observe(visibilityRef.current);
+    };
+  }, [visibilityRef, options]);
+
   return (
     <section className="qualification section">
       <h2 className="section-title">Qualification</h2>
       <span className="section-subtitle">My Journey</span>
 
       <div className="qualification-container container">
-        <div className="qualification-data hidden">
+        <div
+          ref={visibilityRef}
+          className={
+            isVisible
+              ? 'qualification-data show'
+              : 'qualification-data hidden'
+          }
+        >
           <div>
             <h3 className="qualification-title">Web Development</h3>
             <span className="qualification-subtitle">
@@ -48,7 +68,14 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data hidden">
+        <div
+          ref={visibilityRef}
+          className={
+            isVisible
+              ? 'qualification-data show'
+              : 'qualification-data hidden'
+          }
+        >
           <div />
           <div>
             <span className="qualification-rounder" />
@@ -74,7 +101,14 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data hidden">
+        <div
+          ref={visibilityRef}
+          className={
+            isVisible
+              ? 'qualification-data show'
+              : 'qualification-data hidden'
+          }
+        >
           <div>
             <h3 className="qualification-title">
               Introduction to Python
@@ -101,7 +135,14 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data hidden">
+        <div
+          ref={visibilityRef}
+          className={
+            isVisible
+              ? 'qualification-data show'
+              : 'qualification-data hidden'
+          }
+        >
           <div />
           <div>
             <span className="qualification-rounder" />
@@ -128,7 +169,14 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data hidden">
+        <div
+          ref={visibilityRef}
+          className={
+            isVisible
+              ? 'qualification-data show'
+              : 'qualification-data hidden'
+          }
+        >
           <div>
             <h3 className="qualification-title">
               C Programming Language
@@ -155,7 +203,14 @@ function Qualification() {
           </div>
         </div>
 
-        <div className="qualification-data hidden">
+        <div
+          ref={visibilityRef}
+          className={
+            isVisible
+              ? 'qualification-data show'
+              : 'qualification-data hidden'
+          }
+        >
           <div />
           <div>
             <span className="qualification-rounder" />
