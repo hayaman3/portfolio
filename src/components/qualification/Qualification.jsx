@@ -2,33 +2,42 @@ import React, { useEffect, useRef, useState } from 'react';
 import './qualification.css';
 
 function Qualification() {
-  const visibilityRef = useRef(null);
   const [isVisible, setVisible] = useState(false);
+  const visibilityRefs = Array(5)
+    .fill()
+    .map(() => useRef(null));
 
-  const animationCallback = (entries) => {
-    const [entry] = entries;
-    setVisible(entry.isIntersecting);
+  const handleIntersect = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        // eslint-disable-next-line no-use-before-define
+        observer.unobserve(entry.target);
+      }
+    });
   };
 
-  const options = {
+  const observer = new IntersectionObserver(handleIntersect, {
     root: null,
     rootMargin: '0px',
     threshold: 0.5,
-  };
+  });
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      animationCallback,
-      options
-    );
-    if (visibilityRef.current)
-      observer.observe(visibilityRef.current);
+    visibilityRefs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
 
     return () => {
-      if (visibilityRef.current)
-        observer.observe(visibilityRef.current);
+      visibilityRefs.forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
     };
-  }, [visibilityRef, options]);
+  }, [visibilityRefs, observer]);
 
   return (
     <section className="qualification section">
@@ -37,7 +46,7 @@ function Qualification() {
 
       <div className="qualification-container container">
         <div
-          ref={visibilityRef}
+          ref={visibilityRefs[0]}
           className={
             isVisible
               ? 'qualification-data show'
@@ -69,7 +78,7 @@ function Qualification() {
         </div>
 
         <div
-          ref={visibilityRef}
+          ref={visibilityRefs[1]}
           className={
             isVisible
               ? 'qualification-data show'
@@ -102,7 +111,7 @@ function Qualification() {
         </div>
 
         <div
-          ref={visibilityRef}
+          ref={visibilityRefs[2]}
           className={
             isVisible
               ? 'qualification-data show'
@@ -136,7 +145,7 @@ function Qualification() {
         </div>
 
         <div
-          ref={visibilityRef}
+          ref={visibilityRefs[3]}
           className={
             isVisible
               ? 'qualification-data show'
@@ -170,7 +179,7 @@ function Qualification() {
         </div>
 
         <div
-          ref={visibilityRef}
+          ref={visibilityRefs[4]}
           className={
             isVisible
               ? 'qualification-data show'
@@ -204,7 +213,7 @@ function Qualification() {
         </div>
 
         <div
-          ref={visibilityRef}
+          ref={visibilityRefs[5]}
           className={
             isVisible
               ? 'qualification-data show'
