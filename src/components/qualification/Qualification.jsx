@@ -19,8 +19,8 @@ function Qualification() {
 
   const observer = new IntersectionObserver(handleIntersect, {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.5,
+    rootMargin: '-200px 0px',
+    threshold: 1,
   });
 
   useEffect(() => {
@@ -66,7 +66,7 @@ function Qualification() {
               </a>
             </span>
             <div className="qualification-data-icon">
-              <i className="uil uil-data-icon-alt" />
+              <i className="uil uil-calender" />
               2022-2023
             </div>
           </div>

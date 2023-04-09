@@ -45,6 +45,8 @@
 
 .qualification-data-icon {
   font-size: var(--small-font-size);
+  display: flex;
+  gap: .5rem
 }
 
 .qualification-rounder {
@@ -72,7 +74,6 @@
   transition-timing-function: ease;
 
 }
-
 
 .qualification-data:nth-child(2) {
   transition-delay: 200ms;
