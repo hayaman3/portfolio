@@ -11,16 +11,16 @@ function Qualification() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         setVisible(true);
-        // eslint-disable-next-line no-use-before-define
-        observer.unobserve(entry.target);
+      } else {
+        setVisible(false);
       }
     });
   };
 
   const observer = new IntersectionObserver(handleIntersect, {
     root: null,
-    rootMargin: '-200px 0px',
-    threshold: 1,
+    // rootMargin: '-100px 0px',
+    threshold: 0.8,
   });
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function Qualification() {
   }, [visibilityRefs, observer]);
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualifications">
       <h2 className="section-title">Qualification</h2>
       <span className="section-subtitle">My Journey</span>
 

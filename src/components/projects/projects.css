@@ -1,0 +1,6 @@
+.projects-image-short {
+  height: clamp(100px, 50%, 400px);
+  width: clamp(100px, 50%, 400px);
+  border-radius: 1.8rem;
+  filter: grayscale(60%);
+}

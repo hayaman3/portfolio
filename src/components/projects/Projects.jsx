@@ -1,10 +1,10 @@
 import React from 'react';
-import './portfolio.css';
+import './projects.css';
 import weatherShort from './images/weather-short.png';
 
-function Portfolio() {
+function Projects() {
   return (
-    <section className="portfolio section">
+    <section className="portfolio section" id="projects">
       <h2 className="section-title">Portfolio</h2>
       <div>
         <div className="portfolio-card">
@@ -19,5 +19,5 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;
 
