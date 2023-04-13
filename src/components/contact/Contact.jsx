@@ -26,15 +26,13 @@ function Contact() {
         form.current,
         process.env.REACT_APP_EmailJS_API_KEY
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log('message sent');
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((result) => {
+        console.log(result.text);
+        console.log('message sent');
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
     e.target.reset();
   };
 

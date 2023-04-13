@@ -11,8 +11,6 @@ function Qualification() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         setVisible(true);
-      } else {
-        setVisible(false);
       }
     });
   };
