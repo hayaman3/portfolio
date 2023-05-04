@@ -27,6 +27,13 @@ function Frontend() {
               <h3 className="skills-name">JavaScript</h3>
             </div>
           </div>
+
+          <div className="skills-data">
+            <i className="devicon-typescript-plain" />
+            <div>
+              <h3 className="skills-name">TypeScript</h3>
+            </div>
+          </div>
         </div>
         <div className="skills-group">
           <div className="skills-data">
@@ -44,8 +51,14 @@ function Frontend() {
           </div>
 
           <div className="skills-data">
-            <i className="devicon-webpack-plain" />
+            <i className="devicon-nextjs-original" />
+            <div>
+              <h3 className="skills-name">Next.js</h3>
+            </div>
+          </div>
 
+          <div className="skills-data">
+            <i className="devicon-webpack-plain" />
             <div>
               <h3 className="skills-name">Webpack</h3>
             </div>
