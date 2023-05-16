@@ -15,6 +15,8 @@ function Qualification() {
     });
   };
 
+  // const [touched, setToched]= useState({})
+
   const observer = new IntersectionObserver(handleIntersect, {
     root: null,
     // rootMargin: '-100px 0px',
